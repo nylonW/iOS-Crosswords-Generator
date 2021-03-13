@@ -6,7 +6,7 @@
 //  Copyright © 2015 Maxim Bilan. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 open class CrosswordsGenerator {
 
@@ -42,7 +42,6 @@ open class CrosswordsGenerator {
 	open var fillAllWords = false
 	open var emptySymbol = "-"
 	open var debug = true
-	open var orientationOptimization = false
 	
 	// MARK: - Logic properties
 	
@@ -443,12 +442,7 @@ open class CrosswordsGenerator {
 	// MARK: - Misc
 	
 	fileprivate func randomValue() -> Int {
-		if orientationOptimization {
-			return UIDevice.current.orientation.isLandscape ? 1 : 0
-		}
-		else {
-			return randomInt(0, max: 1)
-		}
+        return randomInt(0, max: 1)
 	}
 	
 	fileprivate func randomInt(_ min: Int, max:Int) -> Int {
