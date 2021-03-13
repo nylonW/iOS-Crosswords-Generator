@@ -200,7 +200,7 @@ open class CrosswordsGenerator {
 		
 		var fit = false
 		var count = 0
-		var coordlist = suggestCoord(word)
+        let coordlist = suggestCoord(word)
 		
 		while !fit && count < maxLoops {
 			
