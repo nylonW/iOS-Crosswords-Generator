@@ -11,6 +11,21 @@ Based on <a href="http://bryanhelmig.com/python-crossword-puzzle-generator/"> Py
 
 # Installation
 
+<b>Swift Package Manager:</b>
+
+<pre>
+dependencies: [
+    .package(url: "https://github.com/nylonW/iOS-Crosswords-Generator.git", from: "1.0")
+],
+targets: [
+    .target(
+        dependencies: [
+            .product(name: "iOS-Crosswords-Generator", package: "iOS-Crosswords-Generator")
+        ]
+    )
+]
+</pre>
+
 <b>CocoaPods:</b>
 
 <pre>

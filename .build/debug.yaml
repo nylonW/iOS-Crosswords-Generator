@@ -1,0 +1,78 @@
+client:
+  name: basic
+tools: {}
+targets:
+  "PackageStructure": ["<PackageStructure>"]
+  "iOS-Crosswords-Generator-debug.module": ["<iOS-Crosswords-Generator-debug.module>"]
+  "iOS-Crosswords-GeneratorPackageTests-debug.test": ["<iOS-Crosswords-GeneratorPackageTests-debug.test>"]
+  "iOS-Crosswords-GeneratorTests-debug.module": ["<iOS-Crosswords-GeneratorTests-debug.module>"]
+  "main": ["<iOS-Crosswords-Generator-debug.module>"]
+  "test": ["<iOS-Crosswords-Generator-debug.module>","<iOS-Crosswords-GeneratorPackageTests-debug.test>","<iOS-Crosswords-GeneratorTests-debug.module>"]
+default: "main"
+nodes:
+  "/Users/marcinslusarek/projects/iOS-Crosswords-Generator/Sources/iOS-Crosswords-Generator/":
+    is-directory-structure: true
+  "/Users/marcinslusarek/projects/iOS-Crosswords-Generator/Tests/iOS-Crosswords-GeneratorTests/":
+    is-directory-structure: true
+commands:
+  "<iOS-Crosswords-Generator-debug.module>":
+    tool: phony
+    inputs: ["/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/iOS_Crosswords_Generator.build/Array2D.swift.o","/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/iOS_Crosswords_Generator.build/ArrayShuffle.swift.o","/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/iOS_Crosswords_Generator.build/CrosswordsGenerator.swift.o","/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/iOS_Crosswords_Generator.swiftmodule"]
+    outputs: ["<iOS-Crosswords-Generator-debug.module>"]
+
+  "<iOS-Crosswords-GeneratorPackageTests-debug.test>":
+    tool: phony
+    inputs: ["/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/iOS-Crosswords-GeneratorPackageTests.xctest/Contents/MacOS/iOS-Crosswords-GeneratorPackageTests"]
+    outputs: ["<iOS-Crosswords-GeneratorPackageTests-debug.test>"]
+
+  "<iOS-Crosswords-GeneratorTests-debug.module>":
+    tool: phony
+    inputs: ["/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/iOS_Crosswords_GeneratorTests.build/XCTestManifests.swift.o","/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/iOS_Crosswords_GeneratorTests.build/iOS_Crosswords_GeneratorTests.swift.o","/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/iOS_Crosswords_GeneratorTests.swiftmodule"]
+    outputs: ["<iOS-Crosswords-GeneratorTests-debug.module>"]
+
+  "C.iOS-Crosswords-Generator-debug.module":
+    tool: swift-compiler
+    inputs: ["/Users/marcinslusarek/projects/iOS-Crosswords-Generator/Sources/iOS-Crosswords-Generator/Array2D.swift","/Users/marcinslusarek/projects/iOS-Crosswords-Generator/Sources/iOS-Crosswords-Generator/ArrayShuffle.swift","/Users/marcinslusarek/projects/iOS-Crosswords-Generator/Sources/iOS-Crosswords-Generator/CrosswordsGenerator.swift"]
+    outputs: ["/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/iOS_Crosswords_Generator.build/Array2D.swift.o","/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/iOS_Crosswords_Generator.build/ArrayShuffle.swift.o","/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/iOS_Crosswords_Generator.build/CrosswordsGenerator.swift.o","/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/iOS_Crosswords_Generator.swiftmodule"]
+    executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "iOS_Crosswords_Generator"
+    module-output-path: "/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/iOS_Crosswords_Generator.swiftmodule"
+    import-paths: ["/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug"]
+    temps-path: "/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/iOS_Crosswords_Generator.build"
+    objects: ["/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/iOS_Crosswords_Generator.build/Array2D.swift.o","/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/iOS_Crosswords_Generator.build/ArrayShuffle.swift.o","/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/iOS_Crosswords_Generator.build/CrosswordsGenerator.swift.o"]
+    other-args: ["-target","x86_64-apple-macosx10.10","-swift-version","5","-enable-batch-mode","-index-store-path","/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/index/store","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-Onone","-enable-testing","-g","-j8","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/ModuleCache","-parseable-output","-emit-objc-header","-emit-objc-header-path","/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/iOS_Crosswords_Generator.build/iOS-Crosswords-Generator-Swift.h","-color-diagnostics"]
+    sources: ["/Users/marcinslusarek/projects/iOS-Crosswords-Generator/Sources/iOS-Crosswords-Generator/Array2D.swift","/Users/marcinslusarek/projects/iOS-Crosswords-Generator/Sources/iOS-Crosswords-Generator/ArrayShuffle.swift","/Users/marcinslusarek/projects/iOS-Crosswords-Generator/Sources/iOS-Crosswords-Generator/CrosswordsGenerator.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: 8
+
+  "C.iOS-Crosswords-GeneratorPackageTests-debug.test":
+    tool: shell
+    inputs: ["/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/iOS_Crosswords_Generator.build/Array2D.swift.o","/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/iOS_Crosswords_Generator.build/ArrayShuffle.swift.o","/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/iOS_Crosswords_Generator.build/CrosswordsGenerator.swift.o","/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/iOS_Crosswords_GeneratorTests.build/XCTestManifests.swift.o","/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/iOS_Crosswords_GeneratorTests.build/iOS_Crosswords_GeneratorTests.swift.o"]
+    outputs: ["/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/iOS-Crosswords-GeneratorPackageTests.xctest/Contents/MacOS/iOS-Crosswords-GeneratorPackageTests"]
+    description: "Linking ./.build/x86_64-apple-macosx/debug/iOS-Crosswords-GeneratorPackageTests.xctest/Contents/MacOS/iOS-Crosswords-GeneratorPackageTests"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug","-o","/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/iOS-Crosswords-GeneratorPackageTests.xctest/Contents/MacOS/iOS-Crosswords-GeneratorPackageTests","-module-name","iOS_Crosswords_GeneratorPackageTests","-Xlinker","-bundle","-Xlinker","-rpath","-Xlinker","@loader_path/../../../","@/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/iOS-Crosswords-GeneratorPackageTests.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx","-target","x86_64-apple-macosx10.15","-Xlinker","-add_ast_path","-Xlinker","/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/iOS_Crosswords_Generator.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/iOS_Crosswords_GeneratorTests.swiftmodule","-L","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib"]
+
+  "C.iOS-Crosswords-GeneratorTests-debug.module":
+    tool: swift-compiler
+    inputs: ["/Users/marcinslusarek/projects/iOS-Crosswords-Generator/Tests/iOS-Crosswords-GeneratorTests/XCTestManifests.swift","/Users/marcinslusarek/projects/iOS-Crosswords-Generator/Tests/iOS-Crosswords-GeneratorTests/iOS_Crosswords_GeneratorTests.swift","/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/iOS_Crosswords_Generator.swiftmodule"]
+    outputs: ["/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/iOS_Crosswords_GeneratorTests.build/XCTestManifests.swift.o","/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/iOS_Crosswords_GeneratorTests.build/iOS_Crosswords_GeneratorTests.swift.o","/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/iOS_Crosswords_GeneratorTests.swiftmodule"]
+    executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "iOS_Crosswords_GeneratorTests"
+    module-output-path: "/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/iOS_Crosswords_GeneratorTests.swiftmodule"
+    import-paths: ["/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug"]
+    temps-path: "/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/iOS_Crosswords_GeneratorTests.build"
+    objects: ["/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/iOS_Crosswords_GeneratorTests.build/XCTestManifests.swift.o","/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/iOS_Crosswords_GeneratorTests.build/iOS_Crosswords_GeneratorTests.swift.o"]
+    other-args: ["-target","x86_64-apple-macosx10.15","-swift-version","5","-enable-batch-mode","-index-store-path","/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/index/store","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-Onone","-enable-testing","-g","-j8","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/ModuleCache","-parseable-output","-color-diagnostics"]
+    sources: ["/Users/marcinslusarek/projects/iOS-Crosswords-Generator/Tests/iOS-Crosswords-GeneratorTests/XCTestManifests.swift","/Users/marcinslusarek/projects/iOS-Crosswords-Generator/Tests/iOS-Crosswords-GeneratorTests/iOS_Crosswords_GeneratorTests.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: 8
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/marcinslusarek/projects/iOS-Crosswords-Generator/Sources/iOS-Crosswords-Generator/","/Users/marcinslusarek/projects/iOS-Crosswords-Generator/Tests/iOS-Crosswords-GeneratorTests/","/Users/marcinslusarek/projects/iOS-Crosswords-Generator/Package.swift","/Users/marcinslusarek/projects/iOS-Crosswords-Generator/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

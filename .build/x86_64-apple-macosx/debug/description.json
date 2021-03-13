@@ -1,0 +1,19 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "\/Users\/marcinslusarek\/projects\/iOS-Crosswords-Generator\/.build\/x86_64-apple-macosx\/debug\/iOS-Crosswords-GeneratorPackageTests.xctest\/Contents\/MacOS\/iOS-Crosswords-GeneratorPackageTests",
+      "packageName" : "iOS-Crosswords-Generator",
+      "productName" : "iOS-Crosswords-GeneratorPackageTests"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "swiftTargetMap" : {
+    "C.iOS-Crosswords-Generator-debug.module" : "iOS-Crosswords-Generator",
+    "C.iOS-Crosswords-GeneratorTests-debug.module" : "iOS-Crosswords-GeneratorTests"
+  },
+  "testDiscoveryCommands" : {
+
+  }
+}

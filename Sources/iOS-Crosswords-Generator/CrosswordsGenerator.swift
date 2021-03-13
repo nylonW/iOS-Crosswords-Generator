@@ -23,6 +23,13 @@ open class CrosswordsGenerator {
 		case vertical
 		case horizontal
 	}
+    
+    public struct Crossword {
+        public var words: [Word]
+        public var columns: Int
+        public var rows: Int
+        public var grid: Array2D<String>
+    }
 	
 	// MARK: - Public properties
 	
@@ -36,6 +43,11 @@ open class CrosswordsGenerator {
 			return resultData
 		}
 	}
+    
+    open var resultCrossword: Crossword? {
+        guard let grid = grid else { return nil }
+        return Crossword(words: resultData, columns: columns, rows: rows, grid: grid)
+    }
 	
 	// MARK: - Public additional properties
 	

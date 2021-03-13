@@ -1,0 +1,7 @@
+version: "Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)"
+options: "3b3348c6f121cc2ad162bd069dc813b1"
+build_time: [1615634156, 15058000]
+inputs:
+  "/Users/marcinslusarek/projects/iOS-Crosswords-Generator/Sources/iOS-Crosswords-Generator/Array2D.swift": [1615632127, 684452198]
+  "/Users/marcinslusarek/projects/iOS-Crosswords-Generator/Sources/iOS-Crosswords-Generator/ArrayShuffle.swift": [1615632127, 684585734]
+  "/Users/marcinslusarek/projects/iOS-Crosswords-Generator/Sources/iOS-Crosswords-Generator/CrosswordsGenerator.swift": [1615633988, 808639991]

@@ -1,0 +1,23 @@
+{
+  "": {
+    "swift-dependencies": "/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/iOS_Crosswords_Generator.build/master.swiftdeps"
+  },
+  "/Users/marcinslusarek/projects/iOS-Crosswords-Generator/Sources/iOS-Crosswords-Generator/Array2D.swift": {
+    "dependencies": "/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/iOS_Crosswords_Generator.build/Array2D.d",
+    "object": "/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/iOS_Crosswords_Generator.build/Array2D.swift.o",
+    "swiftmodule": "/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/iOS_Crosswords_Generator.build/Array2D~partial.swiftmodule",
+    "swift-dependencies": "/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/iOS_Crosswords_Generator.build/Array2D.swiftdeps"
+  },
+  "/Users/marcinslusarek/projects/iOS-Crosswords-Generator/Sources/iOS-Crosswords-Generator/ArrayShuffle.swift": {
+    "dependencies": "/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/iOS_Crosswords_Generator.build/ArrayShuffle.d",
+    "object": "/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/iOS_Crosswords_Generator.build/ArrayShuffle.swift.o",
+    "swiftmodule": "/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/iOS_Crosswords_Generator.build/ArrayShuffle~partial.swiftmodule",
+    "swift-dependencies": "/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/iOS_Crosswords_Generator.build/ArrayShuffle.swiftdeps"
+  },
+  "/Users/marcinslusarek/projects/iOS-Crosswords-Generator/Sources/iOS-Crosswords-Generator/CrosswordsGenerator.swift": {
+    "dependencies": "/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/iOS_Crosswords_Generator.build/CrosswordsGenerator.d",
+    "object": "/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/iOS_Crosswords_Generator.build/CrosswordsGenerator.swift.o",
+    "swiftmodule": "/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/iOS_Crosswords_Generator.build/CrosswordsGenerator~partial.swiftmodule",
+    "swift-dependencies": "/Users/marcinslusarek/projects/iOS-Crosswords-Generator/.build/x86_64-apple-macosx/debug/iOS_Crosswords_Generator.build/CrosswordsGenerator.swiftdeps"
+  }
+}
