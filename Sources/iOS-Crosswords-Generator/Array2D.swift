@@ -37,3 +37,21 @@ open class Array2D<T> {
 		return self.rows
 	}
 }
+
+extension Array2D {
+    func toString() -> String {
+        if self is Array2D<String> {
+            var s = ""
+            for i in 0 ..< rows {
+                for j in 0 ..< columns {
+                    s = s + (self[j, i] as! String)
+                    s += "\n"
+                }
+            }
+            
+            return s
+        } else {
+            return ""
+        }
+    }
+}

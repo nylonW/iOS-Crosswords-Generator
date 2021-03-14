@@ -472,5 +472,5 @@ open class CrosswordsGenerator {
 			print(s)
 		}
 	}
-	
+    
 }
