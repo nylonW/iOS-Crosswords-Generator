@@ -39,7 +39,7 @@ open class Array2D<T> {
 }
 
 extension Array2D {
-    func toString() -> String {
+    public func toString() -> String {
         if self is Array2D<String> {
             var s = ""
             for i in 0 ..< rows {
