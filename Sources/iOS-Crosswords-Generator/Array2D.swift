@@ -45,8 +45,8 @@ extension Array2D {
             for i in 0 ..< rows {
                 for j in 0 ..< columns {
                     s = s + (self[j, i] as! String)
-                    s += "\n"
                 }
+                s += "\n"
             }
             
             return s
